@@ -4,95 +4,336 @@
 #
 #    pip-compile test_requirements.in
 #
-adal==1.2.2               # via -c full_requirements.txt, -r test_requirements.in
-apipkg==1.5               # via execnet
-appdirs==1.4.3            # via black
-attrs==19.3.0             # via -c full_requirements.txt, black, jsonschema, pytest
-backcall==0.1.0           # via ipython
-black==19.3b0             # via -r test_requirements.in
-bleach==3.1.5             # via -r test_requirements.in, nbconvert
-certifi==2019.11.28       # via -c full_requirements.txt, requests
-cffi==1.13.2              # via -c full_requirements.txt, cryptography
-chardet==3.0.4            # via -c full_requirements.txt, requests
-click==7.1.2              # via -c full_requirements.txt, black
-coverage==5.0.3           # via pytest-cov
-cryptography==3.3.1       # via -c full_requirements.txt, adal, pyjwt
-decorator==4.4.1          # via ipython, traitlets
-defusedxml==0.6.0         # via nbconvert
-docker==4.1.0             # via -c full_requirements.txt, -r test_requirements.in
-entrypoints==0.3          # via -c full_requirements.txt, nbconvert
-execnet==1.7.1            # via pytest-xdist
-idna==2.8                 # via -c full_requirements.txt, requests
-importlib-metadata==1.4.0  # via -c full_requirements.txt, jsonschema, pluggy, pytest
-influxdb==5.3.0           # via -c full_requirements.txt, -r test_requirements.in
-ipykernel==5.1.3          # via ipywidgets, jupyter, jupyter-console, notebook, qtconsole
-ipython-genutils==0.2.0   # via nbformat, notebook, qtconsole, traitlets
-ipython==7.11.1           # via ipykernel, ipywidgets, jupyter-console
-ipywidgets==7.5.1         # via jupyter
-jedi==0.15.2              # via ipython
-jinja2==2.10.3            # via -c full_requirements.txt, nbconvert, notebook
-jsonschema==3.2.0         # via -c full_requirements.txt, nbformat
-jupyter-client==5.3.4     # via ipykernel, jupyter-console, notebook, qtconsole
-jupyter-console==6.0.0    # via jupyter
-jupyter-core==4.6.1       # via jupyter-client, nbconvert, nbformat, notebook, qtconsole
-jupyter==1.0.0            # via -r test_requirements.in
-markupsafe==1.1.1         # via -c full_requirements.txt, jinja2
-mistune==0.8.4            # via nbconvert
-mock==3.0.5               # via -r test_requirements.in
-more-itertools==8.1.0     # via -c full_requirements.txt, pytest, zipp
-msgpack==0.6.1            # via -c full_requirements.txt, influxdb
-mypy-extensions==0.4.3    # via -c full_requirements.txt, mypy
-mypy==0.761               # via pytest-mypy
-nbconvert==5.6.1          # via -r test_requirements.in, jupyter, notebook
-nbformat==5.0.3           # via ipywidgets, nbconvert, notebook
-notebook==6.0.2           # via -r test_requirements.in, jupyter, widgetsnbextension
-packaging==20.7           # via -c full_requirements.txt, -r test_requirements.in, bleach, pytest
-pandocfilters==1.4.2      # via nbconvert
-parso==0.5.2              # via jedi
-pexpect==4.7.0            # via ipython
-pickleshare==0.7.5        # via ipython
-pluggy==0.13.1            # via pytest
-prometheus-client==0.7.1  # via -c full_requirements.txt, notebook
-prompt-toolkit==2.0.10    # via ipython, jupyter-console
-ptyprocess==0.6.0         # via pexpect, terminado
-py-cpuinfo==5.0.0         # via pytest-benchmark
-py==1.8.1                 # via pytest
-pycparser==2.19           # via -c full_requirements.txt, cffi
-pyflakes==2.1.1           # via pytest-flakes
-pygments==2.5.2           # via ipython, jupyter-console, nbconvert, qtconsole
-pyjwt[crypto]==1.7.1      # via -c full_requirements.txt, adal
-pyparsing==2.4.6          # via -c full_requirements.txt, packaging
-pyrsistent==0.15.7        # via -c full_requirements.txt, jsonschema
-pytest-benchmark==3.2.3   # via -r test_requirements.in
-pytest-cov==2.8.1         # via -r test_requirements.in
-pytest-flakes==4.0.0      # via -r test_requirements.in
-pytest-forked==1.1.3      # via pytest-xdist
-pytest-mock==1.13.0       # via -r test_requirements.in
-pytest-mypy==0.4.2        # via -r test_requirements.in
-pytest-timeout==1.3.4     # via -r test_requirements.in
-pytest-xdist==1.31.0      # via -r test_requirements.in
-pytest==5.3.2             # via -r test_requirements.in, pytest-benchmark, pytest-cov, pytest-flakes, pytest-forked, pytest-mock, pytest-mypy, pytest-timeout, pytest-xdist
-python-dateutil==2.8.1    # via -c full_requirements.txt, adal, influxdb, jupyter-client
-pytz==2019.3              # via -c full_requirements.txt, influxdb
-pyzmq==18.1.1             # via jupyter-client, notebook
-qtconsole==4.6.0          # via jupyter
-requests==2.22.0          # via -c full_requirements.txt, adal, docker, influxdb, responses
-responses==0.10.9         # via -r test_requirements.in
-send2trash==1.5.0         # via notebook
-six==1.14.0               # via -c full_requirements.txt, bleach, cryptography, docker, influxdb, jsonschema, mock, prompt-toolkit, pyrsistent, pytest-xdist, python-dateutil, responses, traitlets, websocket-client
-terminado==0.8.3          # via notebook
-testpath==0.4.4           # via nbconvert
-toml==0.10.0              # via black
-tornado==6.0.3            # via ipykernel, jupyter-client, notebook, terminado
-traitlets==4.3.3          # via ipykernel, ipython, ipywidgets, jupyter-client, jupyter-core, nbconvert, nbformat, notebook, qtconsole
-typed-ast==1.4.0          # via mypy
-typing-extensions==3.7.4.1  # via -c full_requirements.txt, mypy
-urllib3==1.25.7           # via -c full_requirements.txt, -r test_requirements.in, requests
-wcwidth==0.1.8            # via prompt-toolkit, pytest
-webencodings==0.5.1       # via bleach
-websocket-client==0.57.0  # via -c full_requirements.txt, docker
-widgetsnbextension==3.5.1  # via ipywidgets
-zipp==2.0.0               # via -c full_requirements.txt, importlib-metadata
+adal==1.2.2
+    # via
+    #   -c full_requirements.txt
+    #   -r test_requirements.in
+apipkg==1.5
+    # via execnet
+appdirs==1.4.3
+    # via black
+argon2-cffi==20.1.0
+    # via notebook
+attrs==19.3.0
+    # via
+    #   -c full_requirements.txt
+    #   black
+    #   jsonschema
+    #   pytest
+backcall==0.1.0
+    # via ipython
+black==19.3b0
+    # via -r test_requirements.in
+bleach==3.1.5
+    # via
+    #   -r test_requirements.in
+    #   nbconvert
+certifi==2019.11.28
+    # via
+    #   -c full_requirements.txt
+    #   requests
+cffi==1.13.2
+    # via
+    #   -c full_requirements.txt
+    #   argon2-cffi
+    #   cryptography
+chardet==3.0.4
+    # via
+    #   -c full_requirements.txt
+    #   requests
+click==7.1.2
+    # via
+    #   -c full_requirements.txt
+    #   black
+coverage==5.0.3
+    # via pytest-cov
+cryptography==3.3.1
+    # via
+    #   -c full_requirements.txt
+    #   adal
+    #   pyjwt
+decorator==4.4.1
+    # via
+    #   ipython
+    #   traitlets
+defusedxml==0.6.0
+    # via nbconvert
+docker==4.1.0
+    # via
+    #   -c full_requirements.txt
+    #   -r test_requirements.in
+entrypoints==0.3
+    # via
+    #   -c full_requirements.txt
+    #   nbconvert
+execnet==1.7.1
+    # via pytest-xdist
+idna==2.8
+    # via
+    #   -c full_requirements.txt
+    #   requests
+influxdb==5.3.0
+    # via
+    #   -c full_requirements.txt
+    #   -r test_requirements.in
+ipykernel==5.1.3
+    # via
+    #   ipywidgets
+    #   jupyter
+    #   jupyter-console
+    #   notebook
+    #   qtconsole
+ipython-genutils==0.2.0
+    # via
+    #   nbformat
+    #   notebook
+    #   qtconsole
+    #   traitlets
+ipython==7.11.1
+    # via
+    #   ipykernel
+    #   ipywidgets
+    #   jupyter-console
+ipywidgets==7.5.1
+    # via jupyter
+jedi==0.15.2
+    # via ipython
+jinja2==2.10.3
+    # via
+    #   -c full_requirements.txt
+    #   nbconvert
+    #   notebook
+jsonschema==3.2.0
+    # via
+    #   -c full_requirements.txt
+    #   nbformat
+jupyter-client==5.3.4
+    # via
+    #   ipykernel
+    #   jupyter-console
+    #   notebook
+    #   qtconsole
+jupyter-console==6.0.0
+    # via jupyter
+jupyter-core==4.6.1
+    # via
+    #   jupyter-client
+    #   nbconvert
+    #   nbformat
+    #   notebook
+    #   qtconsole
+jupyter==1.0.0
+    # via -r test_requirements.in
+markupsafe==1.1.1
+    # via
+    #   -c full_requirements.txt
+    #   jinja2
+mistune==0.8.4
+    # via nbconvert
+mock==3.0.5
+    # via -r test_requirements.in
+more-itertools==8.1.0
+    # via
+    #   -c full_requirements.txt
+    #   pytest
+msgpack==0.6.1
+    # via
+    #   -c full_requirements.txt
+    #   influxdb
+mypy-extensions==0.4.3
+    # via
+    #   -c full_requirements.txt
+    #   mypy
+mypy==0.761
+    # via pytest-mypy
+nbconvert==5.6.1
+    # via
+    #   -r test_requirements.in
+    #   jupyter
+    #   notebook
+nbformat==5.0.3
+    # via
+    #   ipywidgets
+    #   nbconvert
+    #   notebook
+notebook==6.1.5
+    # via
+    #   -r test_requirements.in
+    #   jupyter
+    #   widgetsnbextension
+packaging==20.7
+    # via
+    #   -c full_requirements.txt
+    #   -r test_requirements.in
+    #   bleach
+    #   pytest
+pandocfilters==1.4.2
+    # via nbconvert
+parso==0.5.2
+    # via jedi
+pexpect==4.7.0
+    # via ipython
+pickleshare==0.7.5
+    # via ipython
+pluggy==0.13.1
+    # via pytest
+prometheus-client==0.7.1
+    # via
+    #   -c full_requirements.txt
+    #   notebook
+prompt-toolkit==2.0.10
+    # via
+    #   ipython
+    #   jupyter-console
+ptyprocess==0.6.0
+    # via
+    #   pexpect
+    #   terminado
+py-cpuinfo==5.0.0
+    # via pytest-benchmark
+py==1.8.1
+    # via pytest
+pycparser==2.19
+    # via
+    #   -c full_requirements.txt
+    #   cffi
+pyflakes==2.1.1
+    # via pytest-flakes
+pygments==2.5.2
+    # via
+    #   ipython
+    #   jupyter-console
+    #   nbconvert
+    #   qtconsole
+pyjwt[crypto]==1.7.1
+    # via
+    #   -c full_requirements.txt
+    #   adal
+pyparsing==2.4.6
+    # via
+    #   -c full_requirements.txt
+    #   packaging
+pyrsistent==0.15.7
+    # via
+    #   -c full_requirements.txt
+    #   jsonschema
+pytest-benchmark==3.2.3
+    # via -r test_requirements.in
+pytest-cov==2.8.1
+    # via -r test_requirements.in
+pytest-flakes==4.0.0
+    # via -r test_requirements.in
+pytest-forked==1.1.3
+    # via pytest-xdist
+pytest-mock==1.13.0
+    # via -r test_requirements.in
+pytest-mypy==0.4.2
+    # via -r test_requirements.in
+pytest-timeout==1.3.4
+    # via -r test_requirements.in
+pytest-xdist==1.31.0
+    # via -r test_requirements.in
+pytest==5.3.2
+    # via
+    #   -r test_requirements.in
+    #   pytest-benchmark
+    #   pytest-cov
+    #   pytest-flakes
+    #   pytest-forked
+    #   pytest-mock
+    #   pytest-mypy
+    #   pytest-timeout
+    #   pytest-xdist
+python-dateutil==2.8.1
+    # via
+    #   -c full_requirements.txt
+    #   adal
+    #   influxdb
+    #   jupyter-client
+pytz==2019.3
+    # via
+    #   -c full_requirements.txt
+    #   influxdb
+pyzmq==18.1.1
+    # via
+    #   jupyter-client
+    #   notebook
+qtconsole==4.6.0
+    # via jupyter
+requests==2.22.0
+    # via
+    #   -c full_requirements.txt
+    #   adal
+    #   docker
+    #   influxdb
+    #   responses
+responses==0.10.9
+    # via -r test_requirements.in
+send2trash==1.5.0
+    # via notebook
+six==1.14.0
+    # via
+    #   -c full_requirements.txt
+    #   argon2-cffi
+    #   bleach
+    #   cryptography
+    #   docker
+    #   influxdb
+    #   jsonschema
+    #   mock
+    #   prompt-toolkit
+    #   pyrsistent
+    #   pytest-xdist
+    #   python-dateutil
+    #   responses
+    #   traitlets
+    #   websocket-client
+terminado==0.8.3
+    # via notebook
+testpath==0.4.4
+    # via nbconvert
+toml==0.10.0
+    # via black
+tornado==6.0.3
+    # via
+    #   ipykernel
+    #   jupyter-client
+    #   notebook
+    #   terminado
+traitlets==4.3.3
+    # via
+    #   ipykernel
+    #   ipython
+    #   ipywidgets
+    #   jupyter-client
+    #   jupyter-core
+    #   nbconvert
+    #   nbformat
+    #   notebook
+    #   qtconsole
+typed-ast==1.4.0
+    # via mypy
+typing-extensions==3.7.4.1
+    # via
+    #   -c full_requirements.txt
+    #   mypy
+urllib3==1.25.7
+    # via
+    #   -c full_requirements.txt
+    #   -r test_requirements.in
+    #   requests
+wcwidth==0.1.8
+    # via
+    #   prompt-toolkit
+    #   pytest
+webencodings==0.5.1
+    # via bleach
+websocket-client==0.57.0
+    # via
+    #   -c full_requirements.txt
+    #   docker
+widgetsnbextension==3.5.1
+    # via ipywidgets
 
 # The following packages are considered to be unsafe in a requirements file:
 # setuptools
